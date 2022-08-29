@@ -43,25 +43,25 @@
                         </div>
                         <div class="header mt-6">
                             <div class="pt-3 text-gray-700 text-md px-6 flex flex-wrap font-semibold">
-                                <div class="w-24 mr-4" @click="toggleActive(1)">
+                                <div class="w-24 mr-4" @click="toggleActive(1,$event)">
                                     <div class="text-center">
                                         <button :class="[active ==1? 'title' : 'text-gray-500']">Overview</button>
                                     </div>
                                     <div  v-show="active ==1" class="md:mt-2 tab-hover rounded-t-lg"></div>
                                 </div>
-                                <div class="w-24 mr-4" @click="toggleActive(2)">
+                                <div class="w-24 mr-4" @click="toggleActive(2,$event)">
                                     <div class="text-center">
                                         <button :class="[active ==2 ? 'title' : 'text-gray-500']">Blessors</button>
                                     </div>
                                     <div  v-show="active ==2" class="md:mt-2 tab-hover rounded-t-lg"></div>
                                 </div>
-                                <div class="w-24 mr-4" @click="toggleActive(3)">
+                                <div class="w-24 mr-4" @click="toggleActive(3,$event)">
                                     <div class="text-center">
                                         <button :class="[active ==3 ? 'title' : 'text-gray-500']">Rewards</button>
                                     </div>
                                     <div  v-show="active ==3" class="md:mt-2 tab-hover rounded-t-lg"></div>
                                 </div>
-                                <div class="w-24" @click="toggleActive(4)">
+                                <div class="w-24" @click="toggleActive(4,$event)">
                                     <div class="text-center">
                                         <button :class="[active ==4 ? 'title' : 'text-gray-500']">Comments</button>
                                     </div>
@@ -230,8 +230,8 @@
                             <div class="rounded mb-2 text-center text-white" style="background-color: #567286">
                                 <div class="py-6">
                                     <p class="mb-2 text-md">STERLING BANK</p>
-                                    <div class="mb-2 flex flex-wrap gap-2 font-semibold justify-center">
-                                        <div class="">
+                                    <div class="mb-2 flex flex-wrap font-semibold justify-center">
+                                        <div class="mr-2">
                                             <div class="text-lg font-semibold">0046748389</div>
                                         </div>
                                         <div class="mt-2">
@@ -284,7 +284,8 @@ export default {
         }
     },
     methods: {
-       toggleActive(n){
+       toggleActive(n,e){
+            e.preventDefault();
             this.active = n;
        },
        toggleVisible(){
