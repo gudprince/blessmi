@@ -159,14 +159,14 @@
                             </div>
                             <div class="title mt-4 text-xl font-semibold">
                                 <p>Fundraiser on Social Media</p>
-                                <div class="border-b pb-4 text-gray-700 text-md pt-4 flex flex-wrap gap-4 font-semibold">
-                                    <div class="">
+                                <div class="border-b pb-4 text-gray-700 text-md pt-4 flex flex-wrap font-semibold">
+                                    <div class="mr-4">
                                         <img src="../assets/image/fb.png" class="" style="height: 20px">
                                     </div>
-                                    <div class="">
+                                    <div class="mr-4">
                                         <img src="../assets/image/instagram.png" class="" style="height: 20px">
                                     </div>
-                                    <div class="">
+                                    <div class="mr-4">
                                         <img src="../assets/image/twitter.png" class="" style="height: 20px">
                                     </div>
                                     <div class="">
@@ -178,8 +178,8 @@
                                 <p class="text-gray-600 text-sm mt-5">Fundraiser ID: <span class="title font-semibold">548757458ID</span></p>
                                 <div class="grid grid-cols-2 gap-4 container mx-auto pt-2 pb-2">
                                     <div>
-                                        <div class="text-gray-700 text-md pt-4 flex flex-wrap gap-4 font-semibold">
-                                            <div class="mt-1">
+                                        <div class="text-gray-700 text-md pt-4 flex flex-wrap font-semibold">
+                                            <div class="mt-1 mr-3">
                                                 <img src="../assets/image/flag-2.png" class="" style="height: 20px">
                                             </div>
                                             <div class="">
@@ -188,11 +188,11 @@
                                         </div>
                                     </div>
                                     <div class=" text-gray-600">
-                                        <div class="text-gray-700 text-md pt-5 flex flex-wrap gap-1 font-semibold flex-row-reverse">
+                                        <div class="text-gray-700 text-md pt-5 flex flex-wrap font-semibold flex-row-reverse">
                                             <div class="">
                                                 <div class="text-red-600 font-semibold">2.5K</div>
                                             </div>
-                                            <div class="mt-1">
+                                            <div class="mt-1 mr-1">
                                                 <img src="../assets/image/love.png" class="" style="height: 15px">
                                             </div>
                                         </div>
