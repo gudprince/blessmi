@@ -234,7 +234,7 @@
                                         <div class="mr-2">
                                             <div class="text-lg font-semibold">0046748389</div>
                                         </div>
-                                        <div class="mt-2">
+                                        <div class="mt-1.5" @click="doCopy">
                                             <img src="../assets/image/copy.png" class="" style="height: 15px">
                                         </div>
                                     </div>
@@ -277,6 +277,7 @@ export default {
     data() {
         return {
             active: 1,
+            message: 'Copy These Text',
             readMore: false,
             hide: true,
             text: 'I need to raise 5 million naira for a wedding ceremony, that is scheduled to hold on the 26th June 2020, i need this money to support this couple and their newly born quadruplets in th',
@@ -294,7 +295,16 @@ export default {
        },
        toggleReadMore(){
             this.readMore = true
-       }
+       },
+       doCopy: function () {
+            this.$copyText(this.message).then(function (e) {
+                alert('Account Number Copied')
+                console.log(e)
+            }, function (e) {
+                alert('Can not copy')
+                console.log(e)
+            })
+        }
     },
 };
 </script>
