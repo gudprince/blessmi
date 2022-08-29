@@ -24,8 +24,8 @@
                         <div class="px-6 container mx-auto">
                             <div class="border-b grid grid-cols-2 gap-4 container mx-auto pt-2 pb-2">
                                 <div>
-                                    <div class="text-gray-700 flex flex-wrap gap-3 font-semibold">
-                                        <div class="mt-1">
+                                    <div class="text-gray-700 flex flex-wrap font-semibold">
+                                        <div class="mt-1 mr-3">
                                             <img src="../assets/image/tag.png" class="" style="height: 15px">
                                         </div>
                                         <div class="">
@@ -42,20 +42,20 @@
                             </div>
                         </div>
                         <div class="header mt-6">
-                            <div class="pt-3 text-gray-700 text-md px-6 flex flex-wrap gap-4 md:gap-6 lg:gap-10 font-semibold">
-                                <div class="w-24" @click="toggleActive(1)">
+                            <div class="pt-3 text-gray-700 text-md px-6 flex flex-wrap font-semibold">
+                                <div class="w-24 mr-4" @click="toggleActive(1)">
                                     <div class="text-center">
                                         <button :class="[active ==1? 'title' : 'text-gray-500']">Overview</button>
                                     </div>
                                     <div  v-show="active ==1" class="md:mt-2 tab-hover rounded-t-lg"></div>
                                 </div>
-                                <div class="w-24" @click="toggleActive(2)">
+                                <div class="w-24 mr-4" @click="toggleActive(2)">
                                     <div class="text-center">
                                         <button :class="[active ==2 ? 'title' : 'text-gray-500']">Blessors</button>
                                     </div>
                                     <div  v-show="active ==2" class="md:mt-2 tab-hover rounded-t-lg"></div>
                                 </div>
-                                <div class="w-24" @click="toggleActive(3)">
+                                <div class="w-24 mr-4" @click="toggleActive(3)">
                                     <div class="text-center">
                                         <button :class="[active ==3 ? 'title' : 'text-gray-500']">Rewards</button>
                                     </div>
@@ -75,11 +75,11 @@
                                     <span class="title font-semibold text-2xl">Updates</span>
                                 </div>
                                 <div class="text-right font-semibold">
-                                    <div class="text-gray-700 text-md pt-5 flex flex-wrap gap-3 font-semibold flex-row-reverse">
+                                    <div class="text-gray-700 text-md pt-5 flex flex-wrap font-semibold flex-row-reverse">
                                         <div class="mt-1">
                                             <img src="../assets/image/arrow.png" class="" style="height: 15px">
                                         </div>
-                                        <div class="">
+                                        <div class="mr-3">
                                             <div class="font-semibold text-sm">View All</div>
                                         </div>
                                     </div>
